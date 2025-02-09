@@ -9,8 +9,11 @@ fi
 # Install Stow
 brew install stow
 
-# Clone dotfiles
-git clone https://github.com/your-username/dotfiles.git ~/.dotfiles
+# Clone dotfiles if not already present
+if [ ! -d "$HOME/.dotfiles" ]; then
+    echo "Cloning dotfiles..."
+    git clone https://github.com/divayamsharma/Dot-Files.git ~/.dotfiles
+fi
 
 # Stow everything
 cd ~/.dotfiles
@@ -20,3 +23,4 @@ stow -v */
 brew install tmux starship mitchellh/tap/ghostty
 
 echo "Dotfiles setup complete! 🚀"
+

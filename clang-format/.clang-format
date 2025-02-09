@@ -1,0 +1,5 @@
+BasedOnStyle: LLVM
+IndentWidth: 2
+ColumnLimit: 0
+BreakBeforeBraces: Allman  # Forces braces to go on new lines
+UseTab: Never

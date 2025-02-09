@@ -1,0 +1,6 @@
+[user]
+	name = Divayam Sharma
+	email = 12345678+username@users.noreply.github.com
+[core]
+	editor = nvim --wait
+	autocrlf = input
